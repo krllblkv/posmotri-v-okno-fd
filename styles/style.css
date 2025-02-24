@@ -101,7 +101,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 4px; 
+  margin-bottom: 4px;
 }
 
 .search-form__fieldset {
@@ -110,10 +110,10 @@ ol {
 
 .search-form__fieldset-title {
   font-family: Fira Sans Condensed;
-  line-height: 21.6px; 
-  font-weight: 400; 
-  font-size: 18px;  
-  margin-bottom: 5px; 
+  line-height: 21.6px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .search-form__label {
@@ -240,7 +240,7 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
 }
 
 .content__card-link:hover {
@@ -263,12 +263,12 @@ ol {
 /* карточка с видео */
 .content__video-card {
   display: flex;
-  align-items: start; 
+  align-items: start;
 }
 
 /* контейнер для описания видео */
 .content__video-card-description-container {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 /* оформление текста для заголовков видео  */
