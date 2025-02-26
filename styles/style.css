@@ -226,8 +226,6 @@ ol {
 
 /* контейнер для списка элементов */
 .content__list {
-  height: 298px;
-  overflow-y: auto;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -341,15 +339,5 @@ ol {
 /* прелоадеры для контейнера результат и контейнера контент */
 .result__video-container,
 .content__list-container {
-  position: relative;
-}
-
-.preloader {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+ position: relative;
 }
