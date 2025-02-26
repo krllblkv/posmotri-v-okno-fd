@@ -55,7 +55,6 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-track {
  background: rgb(217 217 217 / 10%);
- background: transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
