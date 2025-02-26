@@ -54,7 +54,8 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+ background: rgb(217 217 217 / 10%);
+ background: transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -83,10 +84,9 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
-  margin-bottom: 17px;
-  position: relative;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-end: 17px;
 }
 
 .result__video {
@@ -100,8 +100,8 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 4px;
+  align-items: stretch;
+  margin-block-end: 4px;
 }
 
 .search-form__fieldset {
@@ -109,11 +109,11 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   line-height: 21.6px;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-block-end: 5px;
 }
 
 .search-form__label {
@@ -132,12 +132,12 @@ ol {
 
 .search-form__textfield {
   min-width: 225px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -179,9 +179,8 @@ ol {
   flex-shrink: 0;
   width: 19px;
   height: 19px;
-  margin-right: 5px;
-  margin-bottom: 6px;
-  border: 1px solid #fff;
+  margin-inline-end: 5px;
+  border: 1px solid currentColor;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
@@ -273,7 +272,7 @@ ol {
 
 /* оформление текста для заголовков видео  */
 .content__video-card-title {
-  font-family: 'Oswald', 'sans-serif';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -307,10 +306,10 @@ ol {
 
 /* стили для всех кнопок  */
 .button {
-  border: 1px solid #fff;
-  padding: 6px 73.5px;
+  border: 1px solid currentColor;
+  padding: 6px 70.5px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -337,4 +336,21 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-block-start: 30px;
+}
+
+/* прелоадеры для контейнера результат и контейнера контент */
+.result__video-container,
+.content__list-container {
+  position: relative;
+}
+
+.preloader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
