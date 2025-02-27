@@ -86,6 +86,7 @@ ol {
   inline-size: 711px;
   block-size: 386px;
   margin-block-end: 17px;
+  position: relative;
 }
 
 .result__video {
@@ -221,7 +222,8 @@ ol {
 .content__list-container {
   grid-area: search-form;
   overflow-y: auto;
-  max-height: 298px;
+  height: 298px;
+  position: relative;
 }
 
 /* контейнер для списка элементов */
@@ -253,6 +255,10 @@ ol {
 }
 
 .content__card-link:active {
+  background: #545050;
+}
+
+.content__card-link_current {
   background: #545050;
 }
 
@@ -334,10 +340,4 @@ ol {
 .more-button {
   width: 100%;
   margin-block-start: 30px;
-}
-
-/* прелоадеры для контейнера результат и контейнера контент */
-.result__video-container,
-.content__list-container {
- position: relative;
 }
